@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .video {
@@ -33,25 +33,25 @@ body {
 }
 
 .container-main-1 {
-    max-width: 1200px;
     margin: 200px 100px 0px 100px;
-    width: 100%;
     padding-top: 25px;
 }
 
 .container-main-2 {
-    max-width: 1200px;
     margin: 75px 100px;
-    width: 100%;
 }
 
 .container-main-3 {
-    max-width: 1200px;
     margin: 0 100px;
-    width: 100%;
-
 }
 
+.container-main-1,
+.container-main-2,
+.container-main-3 {
+    width: 100%;
+    max-width: 1200px;
+
+}
 .main-content {
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ body {
 .main-text {
     color: #fff;
     margin: 15px;
-    
+    font-weight: 400;
 }
 
 .moon-logo {
