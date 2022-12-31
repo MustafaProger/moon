@@ -97,7 +97,6 @@ body {
 
 .moon_text {
     height: 30px;
-    width: 150px;
     margin-left: 10px;
     margin-top: 2px;
 }
@@ -107,17 +106,15 @@ body {
     padding-top: 20px;
 }
 
-.nav {
+.nav_hyperlinks {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 230px;
     list-style-type: none;
+    margin-left: 180px;
 
 }
 
-.nav-item_li {
+.nav_hyperlink_li {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
@@ -134,10 +131,11 @@ a {
 	cursor: pointer;
 
 }
-.nav-item:hover{
+.nav_hyperlink_a:hover{
     color: white;
+    
 }
-.nav-item:after {
+.nav_hyperlink_a:after {
     color: blue;
 	content: "";
     display: block;
@@ -150,7 +148,7 @@ a {
     transition: width .5s; /* Время эффекта */
 }
 
-.nav-item:hover:after {
+.nav_hyperlink_a:hover:after {
     color: blue;
 	content: "";
     width: 100%;
@@ -162,4 +160,17 @@ a {
     background-color: blue; /* Цвет подчеркивания при появлении линии*/
     transition: width .5s;  /* Время эффекта */
     
+}
+
+
+.moon_text {
+    color: rgb(6, 6, 111);
+    font-size: 30px;
+}
+
+
+.components_of_navbar {
+    display: flex;
+    text-align: center;
+ 
 }
