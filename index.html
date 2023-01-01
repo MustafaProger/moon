@@ -13,7 +13,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>Официальный веб-сайт корпорации moon</title>
 
 </head>
@@ -29,23 +30,25 @@
 
         <div class="navbar" id="navbar">
             <div class="components_of_navbar">
-                <a href="index.html" class="moon_plus_text">
+                <a href="index.html" class="moon_plus_text" >
 
                     <div style="float:left">
                         <a href="index.html">
-                            <img class="moon-logo" src="assets/images/moon_logo_1.png">
+                            <img class="moon-logo" src="assets/images/moon_logo_1.png" data-aos="fade-down"
+                                data-aos-easing="linear" data-aos-duration="500">
                         </a>
                     </div>
 
                     <div style="float:right">
                         <a href="index.html">
-                            <h1 class="moon_text">Moon Studio</h1>
+                            <h1 class="moon_text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                                Moon Studio</h1>
                         </a>
                     </div>
 
                 </a>
 
-                <ul class="nav_hyperlinks">
+                <ul class="nav_hyperlinks" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#main">Главная</a></li>
                     <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#">О нас</a></li>
                     <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#">Команда</a></li>
@@ -55,27 +58,29 @@
                 </ul>
             </div>
         </div>
-    </div>
 
-    <div class="main-content">
-        <div class="div_title">
-            <h1 class="title">Любите поиграть качественные и бесплатные <br>игры, тогда вы попали по нужному адресу</h1>
+        <div class="main-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+            <div class="div_title">
+                <h1 class="title">Любите поиграть качественные и бесплатные <br>игры, тогда вы попали по нужному адресу
+                </h1>
+            </div>
+
+            <div class="text_under_title">Наша компания занимается разработкой игр уже 5 месяцев, а основной задачей<br>
+                компании <span style="font-weight: 600;">Moon Studio</span> является создание качественных продуктов
+                <br>для приятного и веселого времяпрепровождения</div>
+
+            <form class="hyperlink_under_text" action="#about_us">
+                <button class="read_more_button">Читать далее</button>
+            </form>
+
         </div>
 
-        <div class="text_under_title">Наша компания занимается разработкой игр уже 5 месяцев, а основной задачей<br>
-            компании <span style="font-weight: 600;">Moon Studio</span> является создание качественных продуктов
-            <br>для приятного и веселого времяпрепровождения</div>
-
-        <form class="hyperlink_under_text" action="#about_us">
-            <button class="read_more_button">Читать далее</button>
-        </form>
-
     </div>
 
-
-    </div>
-    </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

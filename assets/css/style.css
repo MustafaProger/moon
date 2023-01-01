@@ -90,7 +90,7 @@ a {
 }
 
 .nav_hyperlink_a:after {
-    color: blue;
+    color: #1488CC;;
 	content: "";
     display: block;
     position: absolute;
@@ -98,12 +98,12 @@ a {
     bottom: -5px;
     width: 0;
     height: 2px; /* Высота линии */
-    background-color: blue; /* Цвет подчеркивания при исчезании линии*/
+    background-color: #1488CC;; /* Цвет подчеркивания при исчезании линии*/
     transition: width .5s; /* Время эффекта */
 }
 
 .nav_hyperlink_a:hover:after {
-    color: blue;
+    color: #1488CC;;
 	content: "";
     width: 100%;
     display: block;
@@ -111,13 +111,13 @@ a {
     left: 0;
     bottom: -5px;
     height: 2px; /* Высота линии */
-    background-color: blue; /* Цвет подчеркивания при появлении линии*/
+    background-color: #1488CC;; /* Цвет подчеркивания при появлении линии*/
     transition: width .5s;  /* Время эффекта */
     
 }
 
 .moon_text {
-    color: rgb(6, 6, 111);
+    color: #1488CC; 
     font-size: 30px;
 }
 
@@ -142,12 +142,10 @@ a {
     font-size: 18px;
 }
 
-
-
 .read_more_button {
     cursor: pointer;
     margin-top: 10px;
-    padding: 15px 60px;
+    padding: 19px 60px;
     color: #ffffff;
     font-size: 12px;
     text-transform: uppercase;
@@ -159,11 +157,13 @@ a {
     transition: ease-in .25s;
     border-radius: 40px;
     margin-top: 30px;
-    
 }
 
 .read_more_button:hover{
-    background-color: rgb(6, 6, 111);
+    background-color: #1488CC; 
     color: white;
-    border-color: rgb(6, 6, 111);
+    border-color: #1488CC;  
 }  
+.main-content {
+    padding-top: 25px;
+}
