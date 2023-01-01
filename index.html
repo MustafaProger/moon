@@ -14,14 +14,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="assets/js/index.js"></script>
     
     <title>Официальный веб-сайт корпорации moon</title>
 
 </head>
 
 <body>
-
-    <div class="main">
+    <a href="#button"></a>
+    <div class="main" id="main">
 
         <div class="video">
             <video class="video_media" src="assets/images/coverr-reviewing-a-logo-on-a-laptop-7597-1080p.mov" autoplay
@@ -30,17 +31,17 @@
 
         <div class="navbar" id="navbar">
             <div class="components_of_navbar">
-                <a href="index.html" class="moon_plus_text" >
+                <a href="#about_us" class="moon_plus_text">
 
                     <div style="float:left">
-                        <a href="index.html">
+                        <a href="#about_us">
                             <img class="moon-logo" src="assets/images/moon_logo_1.png" data-aos="fade-down"
                                 data-aos-easing="linear" data-aos-duration="500">
                         </a>
                     </div>
 
                     <div style="float:right">
-                        <a href="index.html">
+                        <a href="#about_us">
                             <h1 class="moon_text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                                 Moon Studio</h1>
                         </a>
@@ -49,17 +50,18 @@
                 </a>
 
                 <ul class="nav_hyperlinks" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#main">Главная</a></li>
-                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#">О нас</a></li>
-                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#">Команда</a></li>
-                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#">Игры</a></li>
-                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#">Новости</a></li>
-                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" href="#">Контакты</a></li>
+                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" id="nav_hyperlink_a_1">Главная</a></li>
+                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" id="nav_hyperlink_a_2">О нас</a></li>
+                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" id="nav_hyperlink_a_3" href="#">Команда</a></li>
+                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" id="nav_hyperlink_a_4" href="#">Игры</a></li>
+                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" id="nav_hyperlink_a_5" href="#">Новости</a></li>
+                    <li class="nav_hyperlink_li"><a class="nav_hyperlink_a" id="nav_hyperlink_a_6" href="#">Контакты</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="main-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+        <div class="main-content" id='main-content' data-aos="fade-down" data-aos-easing="linear"
+            data-aos-duration="500">
             <div class="div_title">
                 <h1 class="title">Любите поиграть качественные и бесплатные <br>игры, тогда вы попали по нужному адресу
                 </h1>
@@ -70,11 +72,18 @@
                 <br>для приятного и веселого времяпрепровождения</div>
 
             <form class="hyperlink_under_text" action="#about_us">
-                <button class="read_more_button">Читать далее</button>
+                <button class="read_more_button" type="button">Читать далее</button>
             </form>
 
         </div>
 
+    </div>
+
+    <div class="about_us" id="about_us">
+        <div class="info_about_us">
+            <h1 class="about_us_title">О нас</h1>
+            <p class="text_under_about_us">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium obcaecati doloremque quam eveniet minus minima veritatis, qui soluta cupiditate dolores, nisi nihil exercitationem dicta repellendus sit, hic facilis doloribus pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos corporis, distinctio cum quia asperiores voluptatum, amet doloremque voluptates cumque iusto odio dolorem rerum temporibus. Dolorem similique doloremque beatae aliquam!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eveniet hic rerum et vitae consequatur, quasi ex ratione. Harum cum tempora ipsam perspiciatis dolorem provident dolorum placeat fugit sapiente laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique minima pariatur laborum, architecto eaque voluptates autem hic atque quo cupiditate unde ullam, quod voluptas molestias ipsam error repellendus quam maxime? Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        </div>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

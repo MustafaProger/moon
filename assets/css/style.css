@@ -2,7 +2,9 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+.main {
+    padding-bottom: 220px;
+}
 .video {
     z-index: -1;
     padding-bottom: 56.25%;
@@ -28,12 +30,12 @@ body {
 .navbar {
     display: flex;
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
     background: #000;
     height: 80px;
+    position: fixed;
 }
 
 .moon-logo{
@@ -124,7 +126,7 @@ a {
 .components_of_navbar {
     display: flex;
     text-align: center;
- 
+    
 }
 
 .title{
@@ -166,4 +168,29 @@ a {
 }  
 .main-content {
     padding-top: 25px;
+}
+
+
+.about_us {
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+
+.info_about_us {
+    padding-top: 80px;
+    margin: auto;
+    max-width: 600px;
+    min-width: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about_us_title {
+    color:#000;
+    font-size: 70px;
+    text-align: center;
+}
+
+.text_under_about_us {
+    text-align: center;
 }
