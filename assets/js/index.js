@@ -19,10 +19,10 @@ window.onload=function(){
 
     // Плавная прокрутка при нажатии на гиперссылку "Главная"
     let nav_hyperlink_a_1 = document.querySelector("#nav_hyperlink_a_1");
-    let main_1 = document.querySelector('#main');
+    let main = document.querySelector('#main');
 
     nav_hyperlink_a_1.addEventListener('click', () => {
-        scrollTo(main_1);
+        scrollTo(main);
         console.log('Все работает');
     });
 
@@ -32,6 +32,16 @@ window.onload=function(){
 
     nav_hyperlink_a_2.addEventListener('click', () => {
         scrollTo(about_us_2);
+        console.log('Все работает');
+    });
+
+    //Плавная анимация при нажатии на гиперссылку "Команда"
+
+    let nav_hyperlink_a_3 = document.querySelector("#nav_hyperlink_a_3");
+    let team = document.querySelector("#team");
+
+    nav_hyperlink_a_3.addEventListener('click', () => {
+        scrollTo(team); 
         console.log('Все работает');
     });
     
