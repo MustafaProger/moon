@@ -2,9 +2,11 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 .main {
     padding-bottom: 220px;
 }
+
 .video {
     z-index: -1;
     padding-bottom: 56.25%;
@@ -12,7 +14,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; 
+    left: 0;
 }
 
 .video_media {
@@ -38,13 +40,12 @@ body {
     position: fixed;
 }
 
-.moon-logo{
+.moon-logo {
     height: 38px;
     width: 38px;
-    
 }
 
-.moon_plus_text{
+.moon_plus_text {
     height: 30px;
     width: 40px;
 }
@@ -64,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin-left: 180px;
+    margin-left: 220px;
 
 }
 
@@ -79,57 +80,56 @@ body {
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
-	position: relative;
-	cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    cursor: pointer;
 
 }
 
-.nav_hyperlink_a:hover{
+.nav_hyperlink_a:hover {
     color: white;
-    
 }
 
 .nav_hyperlink_a:after {
-    color: #1488CC;;
-	content: "";
+    color: #1488CC;
+    content: "";
     display: block;
     position: absolute;
     right: 0;
     bottom: -5px;
     width: 0;
-    height: 2px; /* Высота линии */
-    background-color: #1488CC;; /* Цвет подчеркивания при исчезании линии*/
-    transition: width .5s; /* Время эффекта */
+    height: 2px;
+    background-color: #1488CC;
+    transition: width .5s;
 }
 
 .nav_hyperlink_a:hover:after {
-    color: #1488CC;;
-	content: "";
+    color: #1488CC;
+    content: "";
     width: 100%;
     display: block;
     position: absolute;
     left: 0;
     bottom: -5px;
-    height: 2px; /* Высота линии */
-    background-color: #1488CC;; /* Цвет подчеркивания при появлении линии*/
-    transition: width .5s;  /* Время эффекта */
-    
+    height: 2px;
+    background-color: #1488CC;
+    transition: width .5s;
+
 }
 
 .moon_text {
-    color: #1488CC; 
+    color: #1488CC;
     font-size: 30px;
 }
 
 .components_of_navbar {
     display: flex;
     text-align: center;
-    
+
 }
 
-.title{
+.title {
     color: #ffffff;
     font-size: 45px;
     margin-top: 250px;
@@ -161,15 +161,15 @@ a {
     margin-top: 30px;
 }
 
-.read_more_button:hover{
-    background-color: #1488CC; 
+.read_more_button:hover {
+    background-color: #1488CC;
     color: white;
-    border-color: #1488CC;  
-}  
+    border-color: #1488CC;
+}
+
 .main-content {
     padding-top: 25px;
 }
-
 
 .about_us {
     background-color: #fff;
@@ -181,13 +181,13 @@ a {
     margin: auto;
     max-width: 600px;
     min-width: none;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
 }
 
 .about_us_title {
-    color:#000;
-    font-size: 70px;
+    color: #000;
+    font-size: 45px;
     text-align: center;
 }
 
