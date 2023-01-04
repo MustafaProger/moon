@@ -47,8 +47,3 @@ window.onload=function(){
     
 }
 
-
-let btn = document.getElementById(".sub-menu__link");
-btn.addEventListener("click", function() {
-  this.classList.add("active");
-});
