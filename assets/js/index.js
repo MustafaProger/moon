@@ -45,5 +45,43 @@ window.onload=function(){
         console.log('Все работает');
     });
     
+    // Плавная прокуртка при нажатии на гиперссылки "Игра"
+    let nav_hyperlink_a_4 = document.querySelector("#nav_hyperlink_a_4");
+    let game = document.querySelector("#game");
+
+    nav_hyperlink_a_4.addEventListener('click', () => {
+        scrollTo(game);
+        console.log('Все работает');
+    });
+    // Плавная прокуртка при нажатии на гиперссылки "Отзыв"
+
+    let nav_hyperlink_a_5 = document.querySelector("#nav_hyperlink_a_5");
+    let feedback = document.querySelector("#feedback");
+
+    nav_hyperlink_a_5.addEventListener('click', () => {
+        scrollTo(feedback);
+        console.log('Все работает');
+    });
+    // Плавная прокуртка при нажатии на гиперссылки "go back"
+
+    let scrollTop = document.querySelector('#scrollTop');
+    let goBackMain = document.querySelector('#main');
+
+    scrollTop.addEventListener('click', () => {
+        scrollTo(goBackMain);
+        console.log('Все работает');
+    })
+
+    // Плавная прокуртка при нажатии на логотип
+
+    let scrollToTeam = document.querySelector('#moon_text');
+    let aboutTeam = document.querySelector('#team');
+
+    scrollToTeam.addEventListener('click', () => {
+        scrollTo(aboutTeam);
+        console.log('Все работает');
+    })
+
+    
 }
 

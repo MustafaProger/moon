@@ -220,6 +220,7 @@ a {
     max-width: 400px;
     margin-left: 80px;
     margin-top: 50px;
+    font-size: 18px;
 }
 
 .about_worker+.about_worker {
@@ -374,13 +375,15 @@ a {
     background-color: #fff;
     margin: 0;
     padding: 0;
+    padding-top: 30px;
 }
 
 .about_game {
     margin-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    max-width: 1250px;
+    margin-left: 70px;
+    padding-bottom: 100px;
+   
 }
 
 .title_game {
@@ -389,20 +392,239 @@ a {
     color: black;
     text-align: center;
     font-size: 45px;
-    text-shadow: 1px 1px 2px orangered;
+    
 }
 
 .img_game {
     width: 500px;
     height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    float: right;
+    padding-left: 30px;
     
 }
 
 .text_about_game {
-    max-width: 500px;
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 25px;
 }
 
+
+.text_game_img {
+    font-size: 18px;
+    max-width: 1250px;
+    margin-left: 50px;
+    line-height: 25px;
+}
+
+
+
+:root {
+    --color-1: black;
+    --color-2: #1488CC;
+    --color-3: #e83611;
+    --color-4: black;
+    --color-5: #1488CC;
+}
+
+
+.text_about_game,
+.text_game_img{
+    background: linear-gradient(219deg,
+            var(--color-1) 19%,
+            var(--color-2) 20%, var(--color-2) 39%,
+            var(--color-3) 40%, var(--color-3) 59%,
+            var(--color-4) 60%, var(--color-4) 79%,
+            var(--color-5) 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.feedback {
+    background-color: #f8f9fa !important;
+}
+
+.feedback-title {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0px 15px 0px;
+    margin-top: 0;
+}
+
+.feedback-form-block {
+    text-align: center;
+    padding-bottom: 100px;
+    
+}
+
+.feedback-text {
+    margin-top: 1px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-weight: 240;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.form_control-LN,
+.form_control-FN,
+.form_control-EM,
+.form_control-PN,
+.form_control-TEXT,
+.feedback-button {
+    font-size: 17px;
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 50px;
+    border: 2px solid #ced4da;
+    outline: 0;
+    font-family: 'Montserrat',
+    sans-serif;
+}
+
+.form_control-FN,
+.form_control-LN {
+    width: 23%;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.form_control-TEXT {
+    height: 250px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+::placeholder {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+input:hover,
+textarea:hover {
+    border: 2.5px solid #1488CC;
+    transition: .4s;
+}
+
+input,
+textarea {
+    transition: .4s;
+}
+
+.feedback-button-block {
+    padding-right: 382px;
+}
+
+.feedback-button {
+    border: none;
+    background-color: #1488CC;
+    color: #ffffff;
+    font-size: 13px;
+    width: 370px;
+    padding: 25px 0 37px 0;
+    border-radius: 5px;
+}
+
+.feedback-button:hover {
+    border: none;
+    cursor: pointer;
+    
+}
+
+.end_block {
+    background-color: #383c54;
+    padding: 50px 0px 30px 250px;
+    color: #fff;
+
+}
+
+.block_1 {
+    margin-right: 150px;
+}
+
+.contact_boss{
+    margin-right: 110px;
+}
+
+.block_1,
+.contact_boss {
+    display: inline-block;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+.social-media-link {
+    height: 41px;
+    width: 41px;
+    margin-left: 25px;
+}
+
+.invite_friends-title,
+.contact_boss-title {
+    font-size: 24px;
+}
+
+.invite_friends-text {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.folow_us {
+    padding-top: 10px;
+}
+
+.folow_us-title {
+    font-size: 15px;
+}
+
+.number,
+.email,
+.address {
+    margin-bottom: 40px;
+
+}
+
+.number__hyperlink,
+.email__hyperlink,
+.address__hyperlink {
+    padding-left: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contact_boss-icons {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.scrollTop-icon {
+    height: 40px;
+    width: 40px;
+}
+.scrollTop {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}
+
+.scrollTop span {
+    max-width: 1;
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 13px;
+    padding-left: 15px;
+}
