@@ -46,7 +46,7 @@ window.onload=function(){
     });
     
     // Плавная прокуртка при нажатии на гиперссылки "Игра"
-    let nav_hyperlink_a_4 = document.querySelector("#nav_hyperlink_a_4");
+    let nav_hyperlink_a_4 = document.querySelector("#about-game__hyperlink");
     let game = document.querySelector("#game");
 
     nav_hyperlink_a_4.addEventListener('click', () => {
@@ -74,7 +74,7 @@ window.onload=function(){
 
     // Плавная прокуртка при нажатии на логотип
 
-    let scrollToTeam = document.querySelector('#moon_text');
+    let scrollToTeam = document.querySelector('#moon_plus_text');
     let aboutTeam = document.querySelector('#team');
 
     scrollToTeam.addEventListener('click', () => {

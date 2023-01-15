@@ -46,8 +46,8 @@ body {
 }
 
 .moon_plus_text {
-    height: 30px;
-    width: 40px;
+    display: flex;
+    margin-left: 45px;
 }
 
 .moon_text {
@@ -66,7 +66,6 @@ body {
     align-items: center;
     list-style-type: none;
     margin-left: 180px;
-
 }
 
 .nav_hyperlink_li {
@@ -84,7 +83,6 @@ a {
     color: inherit;
     position: relative;
     cursor: pointer;
-
 }
 
 .nav_hyperlink_a:hover {
@@ -104,9 +102,7 @@ a {
     transition: width .5s;
 }
 
-
-
-.nav_hyperlink_a:hover:after{
+.nav_hyperlink_a:hover:after {
     color: #1488CC;
     content: "";
     width: 100%;
@@ -117,7 +113,6 @@ a {
     height: 2px;
     background-color: #1488CC;
     transition: width .5s;
-
 }
 
 .moon_text {
@@ -128,7 +123,6 @@ a {
 .components_of_navbar {
     display: flex;
     text-align: center;
-
 }
 
 .title {
@@ -154,8 +148,10 @@ a {
     font-size: 12px;
     text-transform: uppercase;
     background-color: transparent;
-    margin: 0 auto; /* размещение кнопки по центру */
-    display: block; /* размещение кнопки по центру */
+    margin: 0 auto;
+    /* размещение кнопки по центру */
+    display: block;
+    /* размещение кнопки по центру */
     border: 2px solid #ffffff;
     letter-spacing: 3.52px;
     transition: ease-in .25s;
@@ -198,7 +194,8 @@ a {
 }
 
 .team {
-    background: url(/assets/images/bg/3.jpg) no-repeat fixed;
+    background: url(/assets/images/bg/3.jpg) center center no-repeat fixed;
+    background-size: 100%;
     padding-bottom: 100px;
 }
 
@@ -227,8 +224,6 @@ a {
     margin-left: 60px;
 }
 
-
-
 @keyframes animation-hidden-blog-start {
     0% {
         opacity: 0;
@@ -239,6 +234,7 @@ a {
     }
 
 }
+
 .nav_hyperlinks {
     display: flex;
 }
@@ -247,8 +243,6 @@ a {
     list-style: none;
     position: relative;
 }
-
-
 
 .sub-menu__link {
     color: white;
@@ -281,7 +275,7 @@ a {
     bottom: 32px;
 }
 
-
+#nav_hyperlink_a_4:after,
 #nav_hyperlink_a_6:after {
     color: #1488CC;
     content: "";
@@ -295,7 +289,6 @@ a {
     transition: width .5s;
 }
 
-
 .sub-menu__list {
     background: #1488CC;
     border-radius: 20px;
@@ -307,8 +300,7 @@ a {
     font-weight: 600;
     margin-left: -5px;
     text-align-last: left;
-    
-
+    min-width: 150px;
 }
 
 .sub-menu__link:hover {
@@ -320,10 +312,9 @@ a {
     color: yellow;
 }
 
-
 .sub-sub-menu__list {
     animation-name: animation-hidden-blog-start;
-    animation-duration: 1s;   
+    animation-duration: 1s;
 }
 
 .sub-sub-menu__link {
@@ -336,24 +327,21 @@ a {
     height: 40px;
     line-height: 40px;
     transition: all .5s;
-    background:#1488CC;
-    color:#fff;
+    background: #1488CC;
+    color: #fff;
     border: none;
     border-left: 5px solid #1488CC;
-
     /* Настройка анимации */
     animation-name: animation-hidden-blog-start,
     animation-hidden-blog-end;
     animation-duration: 1s;
     font-weight: 600;
-
 }
 
 #sub-sub-menu__link_border-radius_3,
 #sub-sub-menu__link_border-radius_5 {
     border-radius: 20px 20px 0 0;
     border-top: 10px solid #1488CC;
-
 }
 
 #sub-sub-menu__link_border-radius_2,
@@ -382,8 +370,7 @@ a {
     margin-left: 50px;
     max-width: 1250px;
     margin-left: 70px;
-    padding-bottom: 100px;
-   
+    padding-bottom: 20px;
 }
 
 .title_game {
@@ -392,7 +379,6 @@ a {
     color: black;
     text-align: center;
     font-size: 45px;
-    
 }
 
 .img_game {
@@ -400,7 +386,6 @@ a {
     height: 300px;
     float: right;
     padding-left: 30px;
-    
 }
 
 .text_about_game {
@@ -409,15 +394,12 @@ a {
     line-height: 25px;
 }
 
-
 .text_game_img {
     font-size: 18px;
     max-width: 1250px;
     margin-left: 50px;
     line-height: 25px;
 }
-
-
 
 :root {
     --color-1: black;
@@ -427,9 +409,8 @@ a {
     --color-5: #1488CC;
 }
 
-
 .text_about_game,
-.text_game_img{
+.text_game_img {
     background: linear-gradient(219deg,
             var(--color-1) 19%,
             var(--color-2) 20%, var(--color-2) 39%,
@@ -455,7 +436,6 @@ a {
 .feedback-form-block {
     text-align: center;
     padding-bottom: 100px;
-    
 }
 
 .feedback-text {
@@ -486,7 +466,7 @@ a {
     border: 2px solid #ced4da;
     outline: 0;
     font-family: 'Montserrat',
-    sans-serif;
+        sans-serif;
 }
 
 .form_control-FN,
@@ -535,21 +515,19 @@ textarea {
 .feedback-button:hover {
     border: none;
     cursor: pointer;
-    
 }
 
 .end_block {
     background-color: #383c54;
     padding: 50px 0px 30px 250px;
     color: #fff;
-
 }
 
 .block_1 {
     margin-right: 150px;
 }
 
-.contact_boss{
+.contact_boss {
     margin-right: 110px;
 }
 
@@ -590,7 +568,6 @@ h4 {
 .email,
 .address {
     margin-bottom: 40px;
-
 }
 
 .number__hyperlink,
@@ -611,6 +588,7 @@ h4 {
     height: 40px;
     width: 40px;
 }
+
 .scrollTop {
     text-decoration: none;
     display: inline-flex;
@@ -627,4 +605,251 @@ h4 {
     letter-spacing: 1px;
     line-height: 13px;
     padding-left: 15px;
+}
+
+.download-game {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 357px;
+    margin: 30px 50px;
+    position: relative;
+    border: 1px solid rgba(83, 70, 70, 0.242);
+    background: none;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000;
+    margin-left: 120px;
+    margin-bottom: 100px;
+    letter-spacing: 30px;
+    font-weight: 400;
+}
+
+.download-game:before,
+.download-game:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.download-game:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.download-game:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.download-game:hover:before,
+.download-game:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.download-game:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.download-game:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.download-game:hover {
+    background: #f8f9fa !important;
+    transition: .5s;
+}
+
+@media (min-width: 1920px) {
+    .site {
+        min-width: 1920px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .nav_hyperlinks {
+        margin-left: 310px;
+    }
+
+    .nav_hyperlink_a {
+        font-size: 18px;
+    }
+
+    .moon-logo {
+        height: 50px;
+        width: 50px;
+        margin-top: 5px;
+    }
+
+    .moon_text {
+        height: 30px;
+        font-size: 35px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .title,
+    .about_us_title,
+    .team_title,
+    .title_game,
+    .feedback-title {
+        font-size: 55px;
+    }
+
+    .text_under_title,
+    .text_under_about_us,
+    .text_about_game,
+    .text_game_img,
+    .feedback-text {
+        font-size: 23px;
+        line-height: 35px;
+    }
+
+    .read_more_button {
+        padding: 22px 70px;
+        color: #ffffff;
+        font-size: 15px;
+        ;
+        letter-spacing: 5.52px;
+    }
+
+    .info_about_us {
+        max-width: 750px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .about_worker {
+        min-width: 500px;
+    }
+
+    .about_three_workers_1,
+    .about_three_workers_2 {
+        margin-left: 70px;
+    }
+
+    .info_about_worker {
+        font-size: 23px;
+    }
+
+    .about_three_workers_2 {
+        margin-bottom: 50px;
+    }
+
+    .about_game,
+    .text_game_img,
+    .text_about_game {
+        max-width: 1585px;
+        margin: 0 auto;
+        padding-top: 30px;
+        font-size: 23px;
+    }
+
+    .img_game {
+        height: 375px;
+        width: 650px;
+    }
+
+    .feedback-button-block {
+        padding-right: 620px;
+    }
+
+    .form_control-FN,
+    .form_control-LN {
+        width: 23.5%;
+    }
+
+    .feedback-button {
+        font-size: 13px;
+        padding: 20px 0 40px 0;
+    }
+
+    .invite_friends-title,
+    .contact_boss-title {
+        font-size: 30px;
+    }
+
+    .invite_friends-text {
+        font-weight: 200;
+        font-size: 22px;
+    }
+
+    .folow_us-title {
+        font-size: 20px;
+    }
+
+    .social-media-link {
+        height: 50px;
+        width: 50px;
+        margin-left: 40px;
+    }
+
+    .number__hyperlink,
+    .email__hyperlink,
+    .address__hyperlink {
+        padding-left: 30px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .contact_boss-icons {
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+    }
+
+    .number__boss-text,
+    .number__boss,
+    .email__text,
+    .email__boss,
+    .address__text,
+    .address_boss {
+        font-size: 20px;
+    }
+
+    .end_block {
+        padding: 50px 0px 30px 350px;
+    }
+
+    .block_1 {
+        margin-right: 270px;
+    }
+
+    .contact_boss {
+        margin-right: 160px;
+    }
+
+    .invite_friends-text {
+        padding-bottom: 14px;
+    }
+
+    .folow_us {
+        padding-top: 0px;
+    }
+
+    .download-game {
+        text-decoration: none;
+        display: inline-block;
+        padding: 30px 550px;
+        margin: 30px 50px;
+        margin-left: 168px;
+        margin-bottom: 100px;
+    }
+
 }
