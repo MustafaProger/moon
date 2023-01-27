@@ -4,10 +4,10 @@ body {
 }
 
 .main {
-    padding-bottom: 340px;
+    padding-bottom: 250px;
 }
 
-.video {
+.img_main {
     z-index: -1;
     padding-bottom: 56.25%;
     position: fixed;
@@ -17,7 +17,7 @@ body {
     left: 0;
 }
 
-.video_media {
+.bg_img_main {
     width: 100%;
     height: auto;
     position: absolute;
@@ -166,16 +166,16 @@ a {
 }
 
 .main-content {
-    padding-top: 130px;
+    padding-top: 70px;
 }
 
 .about_us {
     background-color: #fff;
-    padding-bottom: 165px;
+    padding-bottom: 120px;
 }
 
 .info_about_us {
-    padding-top: 175px;
+    padding-top: 120px;
     margin: auto;
     max-width: 600px;
     min-width: none;
@@ -674,9 +674,15 @@ h4 {
     transition: .5s;
 }
 
-@media (min-width: 1920px) {
+
+
+@media (min-width: 1870px) {
     .site {
-        min-width: 1920px;
+        min-width: 1870px;
+    }
+
+    .main_bg {
+        width: 1870px;
     }
 
     .navbar {
@@ -770,7 +776,7 @@ h4 {
     }
 
     .feedback-button-block {
-        padding-right: 0px;
+        padding-right: 665px;
     }
 
     .form_control-FN,
