@@ -195,7 +195,7 @@ a {
 }
 
 .team {
-    background: url(/assets/images/bg/3.jpg) center center no-repeat fixed;
+    background: url(/assets/images/bg/bg_about_us.jpg) center center no-repeat fixed;
     background-size: 100%;
     padding-bottom: 125px;
 }
@@ -219,6 +219,7 @@ a {
     margin-left: 80px;
     margin-top: 50px;
     font-size: 18px;
+    line-height: 25px;
 }
 
 .about_worker+.about_worker {
@@ -679,10 +680,6 @@ h4 {
 @media (min-width: 1870px) {
     .site {
         min-width: 1870px;
-    }
-
-    .main_bg {
-        width: 1870px;
     }
 
     .navbar {
