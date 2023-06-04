@@ -27,10 +27,11 @@ body {
 
 .moon-logo {
     height: 80px;
+    position: relative;
+    z-index: 5;
 }
 
 .navbar {
-    display: flex;
     width: 100%;
     top: 0;
     left: 0;
@@ -43,11 +44,12 @@ body {
 .moon-logo {
     height: 38px;
     width: 38px;
+    position: relative;
+    z-index: 5;
 }
 
 .moon_plus_text {
     display: flex;
-    margin-left: 45px;
 }
 
 .moon_text {
@@ -57,16 +59,17 @@ body {
 }
 
 .moon-logo,
-.moon_text {
+.moon_text{
     padding-top: 20px;
 }
 
+
 .nav_hyperlinks {
     display: flex;
-    align-items: center;
     list-style-type: none;
-    margin-left: 120px;
-   
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .nav_hyperlink_li {
@@ -122,8 +125,15 @@ a {
 }
 
 .components_of_navbar {
+    position: relative;
     display: flex;
-    text-align: center;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 25px;
+
 }
 
 .title {
@@ -240,6 +250,8 @@ a {
 
 .nav_hyperlinks {
     display: flex;
+    padding-left: 0px;
+
 }
 
 .nav_hyperlinks li {
@@ -445,7 +457,6 @@ a {
 .form_control-PN,
 .form_control-TEXT,
 .feedback-button {
-    font-size: 17px;
     width: 50%;
     position: relative;
     min-height: 1px;
@@ -662,16 +673,13 @@ h4 {
 }
 
 @media (min-width: 1870px) {
-    .site {
-        min-width: 1870px;
-    }
-
     .navbar {
         height: 100px;
     }
 
     .nav_hyperlinks {
         margin-left: 310px;
+        height: 20px;
     }
 
     .nav_hyperlink_a {
@@ -712,7 +720,6 @@ h4 {
         padding: 22px 70px;
         color: #ffffff;
         font-size: 15px;
-        ;
         letter-spacing: 5.52px;
     }
 
@@ -736,6 +743,7 @@ h4 {
 
     .info_about_worker {
         font-size: 23px;
+        line-height: 35px;
     }
 
     .about_three_workers_2 {
@@ -751,22 +759,22 @@ h4 {
         font-size: 23px;
     }
 
+    .info_game {
+        margin: auto;
+        max-width: 1550px;
+    }
+
     .img_game {
         height: 375px;
         width: 650px;
     }
 
     .feedback-button-block {
-        padding-right: 665px;
-    }
-
-    .form_control-FN,
-    .form_control-LN {
-        width: 23.5%;
+        padding-right: 628px;
     }
 
     .feedback-button {
-        font-size: 13px;
+        font-size: 18px;
         padding: 20px 0 40px 0;
     }
 
@@ -842,6 +850,45 @@ h4 {
         margin-bottom: 100px;
     }
 
+    .components_of_navbar {
+        max-width: 1550px;
+    }
+
+    .download-game__button{
+       padding: 30px 441px;
+       font-size: 16px;
+       letter-spacing: 45px;
+    }
+    .kodfun-galeri {
+        height: 25rem !important;
+    }
+
+    .feedback-form input::placeholder,
+    .form_control-TEXT::placeholder {
+        font-size: 20px;
+    }
+
+    .form_control-FN,
+    .form_control-LN {
+        width: 23.5%;
+    }
+
+    .feedback-button-block{
+        margin-left: 100px;
+    }
+    
+    .feedback-button {
+        width: 465px;
+        padding: 30px 0px 50px 0;
+    }
+
+    .form_control-FN,
+    .form_control-LN,
+    .form_control-PN,
+    .form_control-EM {
+        height: 80px;
+    }
+
 }
 
 .kodfun-galeri {
@@ -861,4 +908,76 @@ h4 {
 
 .kodfun-galeri>div:hover {
     flex: 3.35;
+}
+
+.navbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    z-index: 5;
+}
+
+@media (max-width: 767px) {
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .header__burger:before,
+    .header__burger:after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        
+    } 
+    .header__burger:before {
+        top: 0;
+        
+    }
+
+    .header__burger:after {
+        bottom: 0;
+        
+    }
+
+    .header__burger span {
+        position: absolute;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+
+    .nav_hyperlinks {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
+
+    .navbar:before {
+        position: relative;
+        z-index: 120;
+    }
+}
+
+#nav_hyperlink_li_5 {
+    padding-right: 0;
 }
