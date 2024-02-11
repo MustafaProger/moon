@@ -1,0 +1,78 @@
+
+.game 
+	padding: 100px 0
+	&__descr_color 
+		background: linear-gradient(219deg, #000 19%, #1488CC 20%, #1488CC 39%, #e83611 40%, #e83611 59%, #000 60%, #000 79%, #1488CC 30%)
+		-webkit-background-clip: text
+		color: transparent
+	
+	&__galeri 
+		display: flex
+		padding: 60px 0
+		height: 20rem
+		gap: 1rem
+		&>div 
+			flex: 1
+			border-radius: 1rem
+			background-position: center
+			background-repeat: no-repeat
+			background-size: auto 100%
+			transition: all .8s
+			&:hover 
+				flex: 3.35
+	
+	&__button 
+		width: 100%
+		padding: 25px 0
+		position: relative
+		background: none
+		font-weight: 300
+		text-transform: uppercase
+		letter-spacing: 30px
+		border: 1px solid rgba(83, 70, 70, 0.242)
+		font-family: 'Montserrat', sans-serif
+		&:before, &:after 
+			content: ""
+			position: absolute
+			width: 0
+			height: 0
+			opacity: 0
+			box-sizing: border-box
+		
+		&:before 
+			bottom: 0
+			left: 0
+			border-left: 1px solid black
+			border-top: 1px solid black
+			transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s
+		
+		&:after 
+			top: 0
+			right: 0
+			border-right: 1px solid black
+			border-bottom: 1px solid black
+			transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s
+		
+		&:hover:before, &:hover:after 
+			height: 100%
+			width: 100%
+			opacity: 1
+		
+		&:hover:before 
+			transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s
+		
+		&:hover:after 
+			transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s
+		
+		&:hover 
+			background: $var6 
+			transition: .5s
+		
+	
+
+:root 
+	-color-1: black
+	-color-2: $var2
+	-color-3: $var5
+	-color-4: black
+	-color-5: $var2

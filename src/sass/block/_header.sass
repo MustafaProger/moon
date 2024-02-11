@@ -1,0 +1,156 @@
+.header 
+	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 3
+	&::after 
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 72px
+		z-index: -1
+		background: rgba(22, 22, 23, 0.85)
+		backdrop-filter: blur(5px)
+	
+
+header .content 
+	height: 72px
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.icon 
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&__img 
+		height: 32px
+		width: 32px
+		position: relative
+		padding-right: 5px
+		z-index: 5
+	
+	&__text 
+		height: 30px
+		margin: 0
+		padding: 0
+		font-size: 28px
+		color: $var2
+	
+
+.list 
+	display: flex
+	align-items: center
+	margin: 0
+	padding: 0
+	&__item 
+		position: relative
+		color: $var3
+		font-size: 15px
+		text-decoration: none
+		text-transform: uppercase
+		padding: 0 10px
+	
+	&__hyperlink:after 
+		color: $var2
+		content: ""
+		display: block
+		position: absolute
+		right: 0
+		bottom: -5px
+		width: 0
+		height: 2px
+		background-color: $var2
+		transition: width .5s
+	
+	&__hyperlink:hover:after 
+		color: $var2
+		content: ""
+		width: 100%
+		display: block
+		position: absolute
+		left: 0
+		bottom: -5px
+		height: 2px
+		background-color: $var2
+		transition: width .5s
+	
+	ul 
+		position: absolute
+		display: none
+		top: 100%
+		right: 0
+		padding: 0
+		ul 
+			display: none
+			position: absolute
+			top: 85%
+			left: 85%
+			border: none
+
+.sub-menu__link 
+	height: 40px
+	padding: 0 10px
+	color: white
+	text-decoration: none
+	line-height: 40px
+	text-align: center
+	transition: all .5s
+	&:hover 
+		color: yellow
+		font-weight: 600
+	
+
+.sub-menu__list 
+	background: $var2
+	border-radius: 20px
+	color: $var3
+	border: 10px solid $var2
+	font-weight: 600
+	margin-left: -5px
+	text-align-last: left
+	min-width: 150px
+	
+
+ul .sub-sub-menu__list 
+	min-width: 150px
+	padding: 20px
+	border-radius: 20px
+	background-color: $var2
+
+.sub-sub-menu__list li:nth-child(2) 
+	padding: 20px 0
+
+.economic li:nth-child(2) 
+	padding: 20px 0 0 0
+
+
+.list__item_menu-hide
+	position: relative
+	padding-right: 15px
+	&::after
+		content: ''
+		position: absolute
+		top: 3px
+		right: 0px
+		border-right: 5px solid transparent
+		border-top: 5px solid $var1
+		border-left: 5px solid transparent
+		border-bottom: 5px solid transparent
+		transition: all 0.25s
+
+
+.list__item_menu-hide.active
+	position: relative
+	color: $var2
+	&::after
+		top: -3px
+		right: 0px
+		border-top: 5px solid transparent
+		border-bottom: 5px solid $var2
+	.sub-menu__list
+		display: block
+	

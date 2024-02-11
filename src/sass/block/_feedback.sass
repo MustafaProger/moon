@@ -1,0 +1,58 @@
+.feedback 
+	padding: 100px 0
+	background-color: $var6
+	.content 
+		max-width: 800px
+		text-align: center
+		margin: 0 auto
+	
+	&__button 
+		display: block
+		width: 300px
+		margin: 10px 0 0 0
+		padding: 25px 0
+		color: $var1
+		font-size: 18px
+		background-color: $var2
+		border: none
+		border-radius: 5px
+		font-family: 'Montserrat', sans-serif
+		margin-right: auto
+		&:hover 
+			border: none
+			cursor: pointer
+
+	.title__feedback, .subtitle__feedback 
+		color: #000
+		text-align: center
+
+form 
+	padding-right: 10px
+
+.grid-container 
+	display: grid
+	grid-template-columns: repeat(2, minmax(1px, auto))
+	gap: 10px 30px
+
+input, textarea 
+	width: 100%
+	padding-left: 15px
+	height: 50px
+	font-family: 'Montserrat', sans-serif
+	border: 2px solid rgb(206, 212, 218, 0.7)
+	outline: 0
+	transition: 0.4s
+	&:focus 
+		border: 2px solid $var2
+	
+
+::placeholder 
+	font-size: 18px
+	line-height: 1.5
+
+.your-likes 
+	margin-top: 10px
+	padding-top: 15px
+	height: 250px
+	line-height: 1.5
+	resize: vertical

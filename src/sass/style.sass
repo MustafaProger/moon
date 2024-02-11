@@ -1,0 +1,73 @@
+@import "base/variable"
+@import "base/media"
+    
+@import "block/header"
+@import "block/promo"
+@import "block/about"
+@import "block/team"
+@import "block/game"
+@import "block/feedback"
+@import "block/footer"
+
+
+body 
+	margin: 0
+	padding: 0
+	font-family: 'Montserrat', sans-serif
+
+a 
+	text-decoration: none
+	color: inherit
+	position: relative
+	cursor: pointer
+
+p 
+	margin: 0
+	padding: 0
+	font-size: 18px
+	line-height: 30px
+
+li 
+	list-style-type: none
+
+.container 
+	max-width: 1440px
+	margin: 0 auto
+	padding: 0px 25px
+
+.title 
+	margin: 0
+	padding: 0 0 40px 0
+	color: $var1
+	font-size: 42px
+	text-align: center
+
+	&__promo 
+		padding-bottom: 20px
+	
+	&__about 
+		color: $var4
+		font-size: 45px
+		text-align: center
+	
+	&__game 
+		color: $var4
+
+	&__feedback 
+		color: $var4
+
+	&__about-leader,
+	&__contact
+		font-size: 24px
+
+	&__follow-us
+		font-size: 16px
+	
+
+.subtitle 
+	margin: 0
+	padding: 0
+	color: $var1
+	font-size: 18px
+	&__feedback 
+		padding-bottom: 20px
