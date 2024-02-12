@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
 
     <!-- favicons -->
     <link rel="shortcut icon" href="icons/icon.png" type="image/x-icon">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Подлючения Анимаций AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Официальный веб-сайт корпорации moon</title>
 
+    <!-- Подлючения моих стилей -->
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -218,16 +220,27 @@
                     ждет тех, кто готов погрузиться в ее мрачный и загадочный мир. Вас ждет не только игра, но и
                     история, которая останется с вами навсегда.</p>
                 <div class="game__galeri">
-                    <div style="background-image: url('img/img_for_block_game/imageForBlockGame1.png');"></div>
-                    <div style="background-image: url('img/img_for_block_game/imageForBlockGame2.png');"></div>
-                    <div style="background-image: url('img/img_for_block_game/imageForBlockGame3.png');"></div>
-                    <div style="background-image: url('img/img_for_block_game/imageForBlockGame4.png');"></div>
-                    <div style="background-image: url('img/img_for_block_game/imageForBlockGame5.png');"></div>
+                    <div style="background-image: url('img/game/game1.png');"></div>
+                    <div style="background-image: url('img/game/game2.png');"></div>
+                    <div style="background-image: url('img/game/game3.png');"></div>
+                    <div style="background-image: url('img/game/game4.png');"></div>
+                    <div style="background-image: url('img/game/game5.png');"></div>
                 </div>
+
+
+                <div class="game__slick-galeri">
+                    <div class="slick-photo__item"><img src="img/game/game1.png" alt="photo"></div>
+                    <div class="slick-photo__item"><img src="img/game/game2.png" alt="photo"></div>
+                    <div class="slick-photo__item"><img src="img/game/game3.png" alt="photo"></div>
+                    <div class="slick-photo__item"><img src="img/game/game4.png" alt="photo"></div>
+                    <div class="slick-photo__item"><img src="img/game/game5.png" alt="photo"></div>
+                </div>
+                        
                 <button href="game/txt.txt" class="game__button" download="">скачать игру</button>
             </div>
         </div>
     </section>
+
 
     <section class="feedback">
         <div class="container">
@@ -266,14 +279,17 @@
                         <h4 class="title title__follow-us">подписаться на капитана</h4>
                         <div class="social-media">
                             <a href="https://www.instagram.com/" target="_blank"><img
-                                    src="icons/social-media/premium-icon-instagram-4494468.png" alt="instagram"
-                                    class="social-media-link"></a>
+                                    src="icons/social-media/instagram.png" alt="instagram"
+                                    class="social-media__img"></a>
                             <a href="https://vk.com/" target="_blank"><img
-                                    src="icons/social-media/premium-icon-vkontakte-4494490.png" alt="vk"
-                                    class="social-media-link"></a>
+                                    src="icons/social-media/vk.png" alt="vk"
+                                    class="social-media__img"></a>
                             <a href="https://t.me/" target="_blank"><img
-                                    src="icons/social-media/free-icon-telegram-2111710.png" alt="telegram"
-                                    class="social-media-link"></a>
+                                    src="icons/social-media/telegram.png" alt="telegram"
+                                    class="social-media__img"></a>
+                            <a href="" target="_blank"><img
+                                    src="icons/social-media/youtube.png" alt="youtube"
+                                    class="social-media__img"></a>
                         </div>
                     </div>
                 </div>
@@ -281,7 +297,7 @@
                     <h4 class="title title__contact">Контакты</h4>
                     <div class="phone">
                         <a class="phone__icon" href="tel:+79265010023">
-                            <img src="icons/contact_boss/premium-icon-phone-call-5585562.png" alt="phone" class="">
+                            <img src="icons/contact/phone.png" alt="phone" class="">
                         </a>
                         <a class="phone__text" href="tel:+79265010023">
                             Phone:<br>+7 (926) 501-00-23
@@ -289,7 +305,7 @@
                     </div>
                     <div class="email" target="_blank">
                         <a class="email__icon" href="mailto:diertojiev@yandex.ru">
-                            <img src="icons/contact_boss/email (1).png" alt="email" class="">
+                            <img src="icons/contact/email.png" alt="email" class="">
                         </a>
 
                         <a class="email__text" target="_blank" href="mailto:diertojiev@yandex.ru">
@@ -300,8 +316,8 @@
                         <a class="address__icon"
                             href="https://yandex.ru/maps/103817/moskovsky/house/raduzhnaya_ulitsa_8/Z04YdQBgSkcOQFtvfXl4c31jZw==/?ll=37.370329%2C55.592103&z=16.81"
                             target="_blank">
-                            <img src="icons/contact_boss/free-icon-map-locator-17589.png" alt=""
-                                class="contact_boss-icons">
+                            <img src="icons/contact/address.png" alt="address"
+                                class="">
                         </a>
 
                         <a class="address__text"
@@ -313,18 +329,26 @@
                 </div>
             </div>
             <a class="page-up">
-                <span>Go back</span><img class="page-up__img" src="icons/premium-icon-up-arrow-6020555.png"
+                <span>Go back</span><img class="page-up__img" src="icons/page-up.png"
                     alt="top"></a>
             </a>
         </div>
     </footer>
 
+    <!-- Подлючения JQuery -->
     <script src="js/jquery.min.js"></script>
+
+    <!-- Подлючения Slick-слайдер -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- Подлючения Анимаций AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/script.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- Подлючения моих скриптов -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
