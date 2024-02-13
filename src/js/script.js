@@ -38,10 +38,10 @@ $(document).ready(function() {
     });
 
     // работа меню-бургер
-    $('.header__burger').on('click', function() {
+    $('.header__burger').on('click', function () {
         $('.header__burger').toggleClass('active');
         $('.navbar').toggleClass('active');
-        $('body').toggleClass('lock')
-    })
+        $('.list__item').toggleClass('fadeDownList');
+        $('body').toggleClass('lock');
+    });
 });
-

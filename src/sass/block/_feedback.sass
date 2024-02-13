@@ -5,7 +5,6 @@
 		max-width: 800px
 		text-align: center
 		margin: 0 auto
-	
 	&__button 
 		display: block
 		width: 300px
@@ -21,7 +20,6 @@
 		&:hover 
 			border: none
 			cursor: pointer
-
 	.title__feedback, .subtitle__feedback 
 		color: #000
 		text-align: center
@@ -32,11 +30,12 @@ form
 .grid-container 
 	display: grid
 	grid-template-columns: repeat(2, minmax(1px, auto))
-	gap: 10px 30px
+	gap: 10px 20px
 
 input, textarea 
-	width: 100%
-	padding-left: 15px
+	width: 97%
+	padding: 0 15px
+	font-size: 18px
 	height: 50px
 	font-family: 'Montserrat', sans-serif
 	border: 2px solid rgb(206, 212, 218, 0.7)
@@ -45,6 +44,8 @@ input, textarea
 	&:focus 
 		border: 2px solid $var2
 	
+input
+	width: 94%
 
 ::placeholder 
 	font-size: 18px
