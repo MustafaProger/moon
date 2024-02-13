@@ -2,12 +2,13 @@ $(document).ready(function() {
     // Работа скрытого меню 
     $('.list__item_menu-hide').on('click', function(e) {
         $(".list__item_menu-hide").not(this).removeClass('active');
-        $(this).addClass('active');
+        $(this).toggleClass('active');
         e.stopPropagation(); // Предотвращаем всплытие события
     });
 
     //Работа подскрытого меню в скрытом меню
     $('.sub-menu__list_contact li').on('click', function(e) {
+        $('.sub-menu__list_contact li').not(this).removeClass('active');
         $(this).toggleClass('active');
         e.stopPropagation(); // Предотвращаем всплытие события, чтобы избежать воздействия на родительские элементы
     });
@@ -24,5 +25,23 @@ $(document).ready(function() {
         speed: 500,
         dots: true
     });
+
+    // плавная анимация при скролле
+    $('a[href^="#"').on('click', function () {
+
+        let href = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        });
+        return false;
+    });
+
+    // работа меню-бургер
+    $('.header__burger').on('click', function() {
+        $('.header__burger').toggleClass('active');
+        $('.navbar').toggleClass('active');
+        $('body').toggleClass('lock')
+    })
 });
 
