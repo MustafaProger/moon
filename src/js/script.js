@@ -1,3 +1,5 @@
+"use strict"
+
 $(document).ready(function() {
     // Работа скрытого меню 
     $('.list__item_menu-hide').on('click', function(e) {
