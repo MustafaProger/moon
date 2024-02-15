@@ -46,4 +46,31 @@ $(document).ready(function() {
         $('.list__item').toggleClass('fadeDownList');
         $('body').toggleClass('lock');
     });
+
+    //маска для номера
+    $("input[name=phone]").mask("+7 999 999-99-99");
+
+    //отправка на почту при помощи ajax
+    $('#feedback__form').submit(function(e) {
+        e.preventDefault();
+
+        if($(this).valid()) {
+            $('body').addClass('sending')
+        } else {
+            return
+        }
+
+        $.ajax({
+            type: "POST",
+            url: 'php/smart.php',
+            data: $(this).serialize() 
+        }).done(function() {
+            $(this).find('input').val('');
+            $('body').removeClass('sending');
+            $("form").trigger("reset");
+            alert('Письмо отправлено!');
+        });
+
+        return false
+    });
 });
