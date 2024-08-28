@@ -5,8 +5,14 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $comment = $_POST['comment'];
 
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'phpmailer/Exception.php';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+
+$mail = new PHPMailer(true);
 $mail->CharSet = 'utf-8';
 
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
